@@ -14,6 +14,7 @@ const Cake = ({name,imageSrc, ingredients, price,rating }) =>{
                     <li key= {index}>{ingredients}</li>
                 ))}
             </ul>
+            <button className="basket-button">Add to basket</button>
             <p className="price">Price: £{price}</p>
             <p className="rating">Rating: {rating}/5</p>
             <hr></hr>

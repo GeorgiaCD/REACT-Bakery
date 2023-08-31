@@ -8,37 +8,13 @@
 
 .cakes-section-title{
   font-size: 50px;
+  color: rgb(70, 57, 120);
 }
 
 .cake-name {
   font-size: 1.5rem;
-  color: #333;
+  color: rgb(66, 31, 75);
 }
-
-
-/* .cake-images{
-  height: 200px;
-  width: 200px;
-} */
-
-.ingredients-title {
-  font-weight: bold;
-}
-
-.ingredients-item {
-  list-style-type: circle;
-  margin-left: 1rem;
-}
-
-.price {
-  color: #008CBA;
-}
-
-.rating {
-  color: green;
-  font-weight: bold;
-}
-
 
 /* Normal state */
 .cake-images {
@@ -49,4 +25,37 @@
 .cake-images:hover {
   /* transform: translateY(-10px); /* Move the image up by 5px when hovered */
   transform: rotate(5deg);
+}
+
+/* .cake-images{
+  height: 200px;
+  width: 200px;
+} */
+
+.ingredients-title {
+  font-weight: bold;
+  color: rgb(42, 14, 76);
+}
+
+.ingredients-item {
+  list-style-type: circle;
+  margin-left: 1rem;
+  color: rgb(142, 65, 91);
+}
+
+
+
+.price {
+  color: #008CBA;
+}
+
+.rating {
+  color: green;
+  font-weight: bold;
+}
+
+.basket-button{
+  /* font-style: normal; */
+  font-weight:800;
+  color: rgb(141, 28, 47);
 }
