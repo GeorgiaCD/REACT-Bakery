@@ -58,4 +58,10 @@
   /* font-style: normal; */
   font-weight:800;
   color: rgb(141, 28, 47);
+  transition: transform 0.9s ease-in-out;
 }
+
+.basket-button:hover{
+   transform: translateX(500px);
+}
+
