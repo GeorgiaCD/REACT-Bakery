@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-title{
+  background-color: rgb(211, 223, 235);
+  font-size: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cakes-section-title{
+  font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cake-name {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+/* .cake-images{
+  height: 200px;
+  width: 200px;
+} */
+
+.ingredients-title {
+  font-weight: bold;
+}
+
+.ingredients-item {
+  list-style-type: circle;
+  margin-left: 1rem;
+}
+
+.price {
+  color: #008CBA;
+}
+
+.rating {
+  color: green;
+  font-weight: bold;
+}
+
+
+/* Normal state */
+.cake-images {
+  transition: transform 0.01s ease-in-out; /* Add smooth transition */
+}
+
+/* Hover state */
+.cake-images:hover {
+  /* transform: translateY(-10px); /* Move the image up by 5px when hovered */
+  transform: rotate(5deg);
 }

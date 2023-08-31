@@ -1,4 +1,4 @@
-const Cake = ({name,ingredients, price,rating }) =>{
+const Cake = ({name,imageSrc, ingredients, price,rating }) =>{
 
     // const handleRating = () =>{
 
@@ -6,18 +6,19 @@ const Cake = ({name,ingredients, price,rating }) =>{
 
     return(
         <>
-            <h3>{name} </h3>
-            <p>Ingredients:</p>
-            <ul>
+            <h3 className="cake-name">{name} </h3>
+            <img src={imageSrc} className="cake-images"></img>
+            <p className="ingredients-title">Ingredients:</p>
+            <ul className="ingredients-item">
                 {ingredients.map((ingredients,index)=>(
                     <li key= {index}>{ingredients}</li>
                 ))}
             </ul>
-            <p>Price: £{price}</p>
-            <p>Rating: {rating}</p>
+            <p className="price">Price: £{price}</p>
+            <p className="rating">Rating: {rating}/5</p>
+            <hr></hr>
         </>
     )
-
 
 }
 
