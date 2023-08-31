@@ -7,8 +7,13 @@ const Cake = ({name,ingredients, price,rating }) =>{
     return(
         <>
             <h3>{name} </h3>
-            <p>Ingredients: {ingredients}</p>
-            <p>Price: {price}</p>
+            <p>Ingredients:</p>
+            <ul>
+                {ingredients.map((ingredients,index)=>(
+                    <li key= {index}>{ingredients}</li>
+                ))}
+            </ul>
+            <p>Price: £{price}</p>
             <p>Rating: {rating}</p>
         </>
     )
